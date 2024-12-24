@@ -10,7 +10,7 @@ const getUser = async (id:number) => {
   return response.json();
 };
 
-const UsersDetail =async ({ params:{id} }) => {
+const UsersDetail =async ({ params:{id} }:any) => {
   const userData = await getUser(id)
   
   return (
